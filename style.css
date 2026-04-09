@@ -1,76 +1,101 @@
 body {
-  font-family:
-    Arial, sans-serif;
-  background-color: #1c1c1c;
-  color: #ffffff;
-  margin: 0;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
 }
+
 #corpo {
-  width: 100%;
-  display: flex;
-  margin-top: 130px;
+    width: 100%;
+    display: flex;
+    margin-top: 130px;
 }
+
 section {
-  width: 50%;
+    width: 50%;
 }
+
 header {
-  text-align: left;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0; 
+    background-color: #1c1c1c; 
+    padding-bottom: 10px;
 }
+
 h1 {
-  color: #2ecc71;
+    color: #2ecc71;
 }
+
 .converter {
-  background: #2ecc71;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 400px;
-  margin: 0 auto;
+    background: #2ecc71;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
 }
+
 label {
-  display: block;
-  margin-top: 10px;
+    display: block;
+    margin-top: 10px;
+    color: #1c1c1c; 
+    font-weight: bold;
 }
-#quantia::-webkit-inner-spin-button {
-  -webkit-appearance: none; /*isso some com as setinhas adicionadas ao colocar type number no html*/
-  /*-moz-appearance: textfield; para navegadores firefox*/
+
+#quantia::-webkit-inner-spin-button,
+#quantia::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
+
 #quantia {
-  width: 96%;
+    width: 96%;
 }
+
 input,
 select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: none;
-  border-radius: 4px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box; 
 }
+
 button {
-  margin-top: 15px;
-  width: 100%;
-  padding: 10px;
-  background: #e67e22;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s; 
 }
+
+button:hover {
+    background: #d35400;
+}
+
 .resultado {
-  margin-top: 20px;
-  font-size: 18px;
-  text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #1c1c1c; 
+    font-weight: bold;
 }
+
 .grafico {
-  margin-top: 30px;
-  background: #333;
-  height: 200px;
-  border-radius: 8px;
-  text-align: center;
-  line-height: 200px;
-  color: #aaa;
+    margin-top: 30px;
+    background: #333;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 200px;
+    color: #aaa;
 }
