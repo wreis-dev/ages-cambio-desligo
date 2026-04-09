@@ -1,82 +1,91 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
-      href="./style.css"
+            rel="stylesheet"
+            href="./style.css"
     />
     <title>
-      PIÕES DO PAMPA -
-      Conversor Monetário
+        PIÕES DO PAMPA -
+        Conversor Monetário
     </title>
-  </head>
-  <body>
-    <header>
-      <h1>PIÕES DO PAMPA</h1>
-      <p>Data: 31/03/2026</p>
-    </header>
-    <section id="corpo">
-      <section
-        class="converter"
-      >
+</head>
+<body>
+<header>
+    <h1>PIÕES DO PAMPA</h1>
+    <p>Data: 31/03/2026</p>
+</header>
+<section id="corpo">
+    <section
+            class="converter"
+    >
         <label for="quantia"
-          >Quantia:</label
+        >Quantia:</label
         >
         <input
-          type="number"
-          id="quantia"
-          placeholder="Digite o valor"
+                type="number"
+                id="quantia"
+                placeholder="Digite o valor"
         />
 
         <label
-          for="moedaOrigem"
-          >Converter
-          de:</label
+                for="moedaOrigem"
+        >Converter
+            de:</label
         >
         <select
-          id="moedaOrigem"
+                id="moedaOrigem"
         >
-          <option value="BRL">
-            BRL - Real
-          </option>
-          <option value="USD">
-            USD - Dólar
-          </option>
+            <option value="BRL">
+                BRL - Real
+            </option>
+            <option value="USD">
+                USD - Dólar
+            </option>
+            <option value="EUR">
+                EUR - Euro
+            </option>
         </select>
 
         <label
-          for="moedaDestino"
-          >Para:</label
+                for="moedaDestino"
+        >Para:</label
         >
         <select
-          id="moedaDestino"
+                id="moedaDestino"
         >
-          <option value="USD">
-            USD - Dólar
-          </option>
-          <option value="EUR">
-            EUR - Euro
-          </option>
+            <option value="USD">
+                USD - Dólar
+            </option>
+            <option value="EUR">
+                EUR - Euro
+            </option>
+            <option value="BRL">
+                BRL - Real
+            </option>
         </select>
 
-        <button>
-          Converter
+        <button id="btnConverter">
+            Converter
         </button>
 
         <div
-          class="resultado"
+                class="resultado"
         >
-          Resultado:
+            Resultado:
         </div>
-      </section>
+    </section>
 
-      <section
-        class="grafico"
-      >
+    <section
+            class="grafico"
+    >
         [Gráfico em tempo real
         das moedas]
-      </section>
     </section>
-  </body>
+</section>
+
+<script src="./script.js" defer></script>
+</body>
 </html>
